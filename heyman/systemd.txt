@@ -1,0 +1,13 @@
+sftp://radical.local/lib/systemd/system/almanac.service
+
+sudo systemctl start almanac.service
+sudo systemctl enable almanac.service
+sudo systemctl list-units -t service
+sudo systemctl list-units -t service --all
+sudo systemctl status almanac.service
+sudo systemctl start almanac.service
+sudo systemctl stop almanac.service
+sudo systemctl restart almanac.service
+sudo systemctl reload almanac.service
+sudo systemctl enable almanac.service
+sudo systemctl disable almanac.service

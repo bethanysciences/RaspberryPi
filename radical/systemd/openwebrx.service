@@ -1,0 +1,15 @@
+[Unit]
+Description=OpenWebRX WebSDR receiver
+After=multi-user.target
+
+[Service]
+Type=simple
+User=openwebrx
+Group=openwebrx
+WorkingDirectory=/home/pi/openwebrx
+ExecStart=/usr/bin/python3 /home/pi/openwebrx/openwebrx.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

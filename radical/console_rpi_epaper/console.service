@@ -1,0 +1,15 @@
+[Unit]
+Description=e-paper System Display
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=pi
+WorkingDirectory=/home/pi/console_rpi_epaper
+ExecStart=python3 console.py
+
+[Install]
+WantedBy=multi-user.target
