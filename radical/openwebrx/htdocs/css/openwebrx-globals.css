@@ -1,0 +1,25 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;
+}
+
+.sprite {
+    background-image: url(../gfx/openwebrx-sprites.png);
+    display: inline-block;
+}
+
+.openwebrx-button.highlighted .sprite {
+    background-image: linear-gradient(rgba(255,127,0,0.5), rgba(255,127,0,0.5)), url(../gfx/openwebrx-sprites.png);
+    background-blend-mode: overlay;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+    .sprite {
+        background-image: url(../gfx/openwebrx-sprites-2x.png);
+        background-size: 198px 77px;
+    }
+}
